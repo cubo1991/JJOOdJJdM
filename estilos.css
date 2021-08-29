@@ -1,0 +1,56 @@
+
+
+.home {background-color: rgb(255, 255, 255);}
+
+.logo { height: 60px;
+width: 70px;
+margin: 10px ;
+}
+
+th {text-align: center;}
+td {
+    text-align: center;
+}
+th {text-align: center;}
+
+.competidores {
+    display: flexbox;
+
+}
+.competidores__logos { height: auto;
+width: auto;
+display: flex;
+overflow: hidden;
+;
+}
+
+
+.competidores__logos:hover {
+    transform: scale(1.05, 1.1);
+    transition: 1s;
+    overflow: hidden;
+    
+}
+
+.homeGrid {
+    display: grid;
+    grid-template-areas: 
+        "lista tabla";
+    grid-template-columns: 25% 1fr;
+    grid-template-rows: 1fr 3fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    height: 100vh;
+    
+    
+
+}
+
+.gridTabla {grid-area: tabla;
+    padding: 12px;}
+.gridLista {
+    grid-area: lista;
+padding: 12px;
+
+}
+.gridMenu {grid-area: menu;}
